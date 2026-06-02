@@ -5,7 +5,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CheckCircle
-import androidx.compose.material.icons.filled.CloudOff
+import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -31,7 +31,7 @@ fun HistoryScreen(app: CobbVisionApp, padding: PaddingValues) {
     if (sessions.isEmpty()) {
         Box(Modifier.fillMaxSize().padding(padding), contentAlignment = Alignment.Center) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Icon(Icons.Filled.CloudOff, contentDescription = null,
+                Icon(Icons.Filled.LocationOn, contentDescription = null,
                      modifier = Modifier.size(48.dp),
                      tint = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.3f))
                 Spacer(Modifier.height(8.dp))
