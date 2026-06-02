@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive-icon foreground: a stylised boost/RPM gauge.
+     108x108 viewport; the visible safe zone is the centre ~72dp. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Gauge face (white disc) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,54 a26,26 0 1,0 52,0 a26,26 0 1,0 -52,0 Z" />
+
+    <!-- Gauge sweep arc (orange), from lower-left around the top to lower-right -->
+    <path
+        android:strokeColor="#FF6B00"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M35,72 A26,26 0 1 1 73,72" />
+
+    <!-- Tick marks -->
+    <path
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M54,32 L54,37 M71,39 L68,42 M37,39 L40,42 M76,54 L71,54 M37,54 L32,54" />
+
+    <!-- Needle pointing to high boost (upper-right) -->
+    <path
+        android:fillColor="#FF6B00"
+        android:pathData="M54,54 L71,40 L60,38 Z" />
+
+    <!-- Centre hub -->
+    <path
+        android:fillColor="#1A1A1A"
+        android:pathData="M54,50 a4,4 0 1,0 0.1,0 Z" />
+</vector>
